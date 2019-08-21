@@ -1,8 +1,8 @@
 package com.all_data_page;
 
+import org.testng.annotations.Test;
 import java.util.Scanner;
 
-import org.junit.Test;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
