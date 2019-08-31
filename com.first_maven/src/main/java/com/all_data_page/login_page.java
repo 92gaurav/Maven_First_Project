@@ -17,6 +17,7 @@ public class login_page extends BrowserFactory {
 		this.driver = ldriver;
 		
 	}
+		
 	
 		@FindBy (how=How.XPATH, using="//ul[@class='nav navbar-nav navbar-right hidden-sm go-left']//b[@class='lightcaret mt-2 go-left']")
 		@CacheLookup
