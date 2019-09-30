@@ -1,14 +1,13 @@
 package com.all_data_page;
 
 import java.io.File;
+
 import java.io.IOException;
 
 import org.apache.commons.io.FileUtils;
-import org.openqa.selenium.By;
 import org.openqa.selenium.OutputType;
 import org.openqa.selenium.TakesScreenshot;
 import org.openqa.selenium.WebDriver;
-import org.openqa.selenium.WebElement;
 import org.testng.annotations.Test;
 
 public class Online_Booking extends login_page {
@@ -34,11 +33,10 @@ public class Online_Booking extends login_page {
 	    try {
 	       File source = ((TakesScreenshot) webDriver).getScreenshotAs(OutputType.FILE);
 
+	       FileUtils.copyFile(source, new File ("/home/oci/git/Maven_First_Project/com.first_maven/Screen_Shots.png"));
+	       System.out.println("Screenshot Taken!!!!");
 
-	    FileUtils.copyFile(source, new File ("/home/oci/git/Maven_First_Project/com.first_maven/Screen_Shots.png"));
-	    System.out.println("Screenshot Taken!!!!");
-
-	    } catch (IOException e) {
+	    	} catch (IOException e) {
 	        e.printStackTrace();
 	    } 
 	}

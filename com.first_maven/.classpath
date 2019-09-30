@@ -22,6 +22,7 @@
 			<attribute name="maven.pomderived" value="true"/>
 		</attributes>
 	</classpathentry>
+	<classpathentry kind="src" path="Excel_file"/>
 	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER/org.eclipse.jdt.internal.debug.ui.launcher.StandardVMType/J2SE-1.5">
 		<attributes>
 			<attribute name="maven.pomderived" value="true"/>
@@ -59,5 +60,13 @@
 	<classpathentry kind="lib" path="/home/oci/Documents/selenium/chromedriver_linux64.zip"/>
 	<classpathentry kind="lib" path="/home/oci/Documents/selenium/selenium-java-3.141.5.zip"/>
 	<classpathentry kind="lib" path="/home/oci/Documents/selenium/poi-bin-4.0.1-20181203.zip"/>
+	<classpathentry kind="lib" path="/home/oci/Documents/selenium/poi-4.0.1/poi-excelant-4.0.1.jar"/>
+	<classpathentry kind="lib" path="/home/oci/Documents/selenium/poi-4.0.1/poi-examples-4.0.1.jar"/>
+	<classpathentry kind="lib" path="/home/oci/Documents/selenium/poi-4.0.1/poi-scratchpad-4.0.1.jar"/>
+	<classpathentry kind="lib" path="/home/oci/Documents/selenium/poi-4.0.1/poi-ooxml-4.0.1.jar"/>
+	<classpathentry kind="lib" path="/home/oci/Documents/selenium/poi-4.0.1/poi-4.0.1.jar"/>
+	<classpathentry kind="lib" path="/home/oci/Documents/selenium/poi-4.0.1/poi-ooxml-schemas-4.0.1.jar"/>
+	<classpathentry kind="lib" path="/home/oci/Documents/selenium/poi-4.0.1/ooxml-lib/curvesapi-1.05.jar"/>
+	<classpathentry kind="lib" path="/home/oci/Documents/selenium/poi-4.0.1/ooxml-lib/xmlbeans-3.0.2.jar"/>
 	<classpathentry kind="output" path="target/classes"/>
 </classpath>

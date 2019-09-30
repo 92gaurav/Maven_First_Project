@@ -40,7 +40,7 @@ public class BrowserFactory {
 		String title = driver.getTitle();
 		System.out.println("Title of the page is : "+title);
 		
-		driver.manage().window().maximize();
+		//driver.manage().window().maximize();
 		driver.manage().deleteAllCookies();
 		
 		return driver;
