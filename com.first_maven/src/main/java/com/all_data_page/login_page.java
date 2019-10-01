@@ -56,6 +56,7 @@ public class login_page extends BrowserFactory {
 		@FindBy (how=How.XPATH,using="//button[@id='SubmitLogin']//span")
 		WebElement login_button;
 		
+		@Test
 		public void sheet(String name, String passwds) throws InterruptedException, IOException {
 			
 			Thread.sleep(4000);
