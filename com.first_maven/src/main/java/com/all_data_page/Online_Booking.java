@@ -34,7 +34,8 @@ public class Online_Booking extends login_page {
 	       File source = ((TakesScreenshot) webDriver).getScreenshotAs(OutputType.FILE);
 
 	       FileUtils.copyFile(source, new File ("/home/oci/git/Maven_First_Project/com.first_maven/Screen_Shots.png"));
-	       System.out.println("Screenshot Taken!!!!");
+	       System.out.println("Shot Taken!!!!");
+	       
 
 	    	} catch (IOException e) {
 	        e.printStackTrace();
