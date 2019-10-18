@@ -14,29 +14,32 @@ public class BrowserFactory {
 	@Test
 	public static WebDriver Browser(String browsername, String url) {
 			
-		String ch = "Chrome";
-		String fx = "Firefox";
+		//String ch = "Chrome";
+		//String fx = "Firefox";
 		
-		@SuppressWarnings("resource")
-		Scanner sn  = new Scanner(System.in);
-		System.out.println("Enter a browser name");
-		String input_browser = sn.nextLine();
+//		@SuppressWarnings("resource")
+//		Scanner sn  = new Scanner(System.in);
+//		System.out.println("Enter a browser name");
+//		String input_browser = sn.nextLine();
 		
-			if(input_browser.equalsIgnoreCase(ch)){
+//			if(input_browser.equalsIgnoreCase(ch)){
+//		
+//				System.setProperty("webdriver.chrome.driver", "/usr/games/chromedriver");
+//				driver = new ChromeDriver();
+//				driver.manage().window().maximize();
+//			}
+//			else if(input_browser.equalsIgnoreCase(fx)){
+//			
+//				System.setProperty("webdriver.gecko.driver", "/usr/games/geckodriver");
+//				driver = new FirefoxDriver();
+//				driver.manage().window().maximize();
+//
+//			}
 		
-				System.setProperty("webdriver.chrome.driver", "/usr/games/chromedriver");
-				driver = new ChromeDriver();
-				driver.manage().window().maximize();
-			}
-			else if(input_browser.equalsIgnoreCase(fx)){
-			
-				System.setProperty("webdriver.gecko.driver", "/usr/games/geckodriver");
-				driver = new FirefoxDriver();
-				driver.manage().window().maximize();
-
-			}
+		driver = new ChromeDriver();
 		
 		driver.navigate().to(url);
+		//driver.manage().window().maximize();
 		String title = driver.getTitle();
 		System.out.println("Title of the page is : "+title);
 		

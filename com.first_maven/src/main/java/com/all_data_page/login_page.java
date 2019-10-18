@@ -56,12 +56,13 @@ public class login_page extends BrowserFactory {
 		@FindBy (how=How.XPATH,using="//button[@id='SubmitLogin']//span")
 		WebElement login_button;
 		
-		@Test
-		public void sheet(String name, String passwds) throws InterruptedException, IOException {
+	@Test
+	public void sheet(String name, String passwds) throws InterruptedException, IOException {
 			
-			Thread.sleep(4000);
+			Thread.sleep(2000);
 			myaccount.click();	
-			
+			System.out.println("my account clicked");
+			Thread.sleep(4000);
 			Xls_Reader reader = new Xls_Reader("/home/oci/Documents/selenium/data_driven_framework.xlsx");
 			
 			System.out.println("Printing Xls_Reader : "+reader);
@@ -87,6 +88,7 @@ public class login_page extends BrowserFactory {
 					clickpass.sendKeys(passwds);
 					System.out.println();
 					Thread.sleep(2000);
+					
 					if (i!= 7) {
 						
 					Thread.sleep(1000);
@@ -103,22 +105,22 @@ public class login_page extends BrowserFactory {
 			System.out.println("Click login button");
 
 			
-					URL link = new URL(url_link);
-					HttpURLConnection http_Conn =(HttpURLConnection)link.openConnection();
-					http_Conn.setConnectTimeout(2000);
-					http_Conn.connect();
-					 
-					 if(http_Conn.getResponseCode()== 200) { 
-					
-						 System.out.println(url_link+" -- "+http_Conn.getResponseMessage());
-						 System.out.println("You have Successfully login");
-					 
-					 }
-					 
-					 else {
-						 System.out.println("Invalid Credentials ! Try again ");
-				
-					 }		
+//					URL link = new URL(url_link);
+//					HttpURLConnection http_Conn =(HttpURLConnection)link.openConnection();
+//					http_Conn.setConnectTimeout(1000);
+//					http_Conn.connect();
+//					 
+//					 if(http_Conn.getResponseCode()== 200) { 
+//					
+//						 System.out.println(url_link+" -- "+http_Conn.getResponseMessage());
+//						 System.out.println("You have Successfully login");
+//					 
+//					 }
+//					 
+//					 else {
+//						 System.out.println("Invalid Credentials ! Try again ");
+//				
+//					 }		
 	}
 			}	
 			

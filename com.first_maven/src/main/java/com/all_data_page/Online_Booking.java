@@ -27,7 +27,7 @@ public class Online_Booking extends login_page {
 		
 		
 	}
-	
+	@Test
 	public void takeScreenshot(WebDriver webDriver) {
 
 	    try {
