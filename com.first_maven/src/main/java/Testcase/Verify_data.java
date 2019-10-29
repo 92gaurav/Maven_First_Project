@@ -35,7 +35,6 @@ public class Verify_data{
 		//Data_sheet data = PageFactory.initElements(driver, Data_sheet.class);
 		//data.sheet();
 		
-		
 	}
 	
 }

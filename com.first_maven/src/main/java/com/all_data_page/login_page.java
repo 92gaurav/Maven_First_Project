@@ -1,9 +1,6 @@
 package com.all_data_page;
 
 import org.testng.annotations.Test;
-
-
-
 import Reader.Xls_Reader;
 
 import java.io.IOException;
