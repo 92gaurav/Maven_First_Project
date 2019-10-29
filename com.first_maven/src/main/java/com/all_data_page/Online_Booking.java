@@ -1,7 +1,6 @@
 package com.all_data_page;
 
 import java.io.File;
-
 import java.io.IOException;
 
 import org.apache.commons.io.FileUtils;
@@ -25,21 +24,21 @@ public class Online_Booking extends login_page {
 //		
 		
 		
-		
 	}
 	@Test
 	public void takeScreenshot(WebDriver webDriver) {
+		System.out.println();
 
-	    try {
-	       File source = ((TakesScreenshot) webDriver).getScreenshotAs(OutputType.FILE);
-
-	       FileUtils.copyFile(source, new File ("/home/oci/git/Maven_First_Project/com.first_maven/Screen_Shots.png"));
-	       System.out.println("Shot Taken!!!!");
-	       
-
-	    	} catch (IOException e) {
-	        e.printStackTrace();
-	    } 
+//	    try {
+//	       File source = ((TakesScreenshot) webDriver).getScreenshotAs(OutputType.FILE);
+//
+//	       FileUtils.copyFile(source, new File ("/home/oci/git/Maven_First_Project/com.first_maven/Screen_Shots.png"));
+//	       System.out.println("Shot Taken!!!!");
+//	       
+//
+//	    	} catch (IOException e) {
+//	        e.printStackTrace();
+//	    } 
+//	}
 	}
-
 }
